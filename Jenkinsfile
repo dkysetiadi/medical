@@ -1,10 +1,6 @@
 pipeline {
     agent any
-
-    environment {
-        GCP_SERVICE_ACCOUNT = credentials('SERVICE_ACCOUNT_GCP')
-    }
-
+    
     stages {
         stage('Build') {
             steps {
